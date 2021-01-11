@@ -7,11 +7,13 @@ def point_distance(x1,y1,x2,y2):
 
 def dist_euclidiana(V1, V2):
   points = len(V1)
-  distances = []
+  menor = 100000000000
   for i in range(points):
     for k in range(points):
       if i != k:
-        distances.append(point_distance(V1[i], V2[i], V1[k], V2[k])) """
+        d = point_distance(V1[i], V2[i], V1[k], V2[k]))
+        if d < menor:
+          menor=d """
 
 # itero por cada punto P
 #   itero por cada punto diferente a P y calculo su distancia respecto a P
